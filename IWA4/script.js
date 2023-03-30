@@ -1,12 +1,15 @@
-const year = 2050;
+let date = 2050;
 let stat = 'parent';
 let count = 0;
 
-if (year === 2050) {
+
+if (date === 2050) {
   console.log("January", "New Year's Day");
   console.log("March", "Human Rights Day");
-  console.log("April", "Family Day");
-  console.log("April", "Freedom Day");
+  
+  date = 'April'
+  console.log(date, "Family Day");
+  console.log(date, "Freedom Day");
   count += 4;
 
   if (stat === "student") 
@@ -20,17 +23,19 @@ if (year === 2050) {
 
 console.log("August", "Women's Day");
 console.log("September", "Heritage Day");
-console.log("December", "Day of Reconciliation");
+
+date = 'December'
+console.log(date, "Day of Reconciliation");
 count += 3;
 
 if (stat === "parent") {
-  console.log("December", "Christmas Day");
+  console.log(date, "Christmas Day");
   count += 1;
 }
 
-console.log("December", "Day of Goodwill");
+console.log(date, "Day of Goodwill");
 count += 1;
 
 console.log("The status value as declared initially:",stat);
-console.log("TThe year as declared initially:", year);
+console.log("TThe year as declared initially:", date);
 console.log("The total count of holidays for the above settings:", count);
