@@ -7,10 +7,12 @@ if (date === 2050) {
   console.log("January", "New Year's Day");
   console.log("March", "Human Rights Day");
   
-  date = 'April'
+  if (true) { 
+ const date = 'April'
   console.log(date, "Family Day");
   console.log(date, "Freedom Day");
   count += 4;
+}
 
   if (stat === "student") 
   {
@@ -24,7 +26,8 @@ if (date === 2050) {
 console.log("August", "Women's Day");
 console.log("September", "Heritage Day");
 
-date = 'December'
+if (true){ 
+const date = 'December'
 console.log(date, "Day of Reconciliation");
 count += 3;
 
@@ -33,8 +36,10 @@ if (stat === "parent") {
   count += 1;
 }
 
+
 console.log(date, "Day of Goodwill");
 count += 1;
+}
 
 console.log("The status value as declared initially:",stat);
 console.log("TThe year as declared initially:", date);
