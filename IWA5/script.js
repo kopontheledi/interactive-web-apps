@@ -2,16 +2,18 @@ const FREE_WARNING = 'Free shipping only applies to single customer orders'
 const BANNED_WARNING = 'Unfortunately we do not ship to your country of residence'
 const NONE_SELECTED = 0
 
-let locations = 'RSA'
-let currency = 'R'
+const locations = 'RSA'
+const currency = 'R'
 
-let shoes = 300 * 1;
-let toys = 100 * 5;
-let shirts = 150 * NONE_SELECTED;
-let batteries = 35 * 2;
-let pens = 5 * NONE_SELECTED;
+const shoes = 300 * 1;
+const toys = 100 * 5;
+const shirts = 150 * NONE_SELECTED;
+const batteries = 35 * 2;
+const pens = 5 * NONE_SELECTED;
 
+//add currency and shipping = null
 let shipping;
+
 
 if (locations === 'RSA') {
   shipping = 400;
@@ -23,7 +25,18 @@ if (locations === 'RSA') {
   shipping = 800;
 }
 
-let subtotal = shoes + toys + shirts + batteries + pens;
+
+/* if (locations === 'RSA') {
+  shipping = 400;
+  currency = 'R';
+} else {
+  currency = '$';
+  shipping = location === 'NAM' ? 600 : 800
+}*/
+
+
+
+const subtotal = shoes + toys + shirts + batteries + pens;
 
 if (subtotal >= 1000 && locations !== 'NK') {
   if (location === 'RSA' || (locations === 'NAM' && customers === 1)) {

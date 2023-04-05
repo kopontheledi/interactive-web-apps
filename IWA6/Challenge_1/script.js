@@ -3,8 +3,8 @@
 
 // // Only change below this line
 
-// const primaryValid = typeof primaryPhone == parseInt(primaryPhone)
-// const secondaryValid = typeof secondaryPhone == parseInt(secondaryPhone)
+// const primaryValid = parseInt(primaryPhone)  == primaryPhone
+// const secondaryValid = parseInt(secondaryPhone)  ==  secondaryPhone
 
 // console.log('Primary phone is valid numerical string:', primaryValid)
 // console.log('Secondary phone is valid numerical string:', secondaryValid )
