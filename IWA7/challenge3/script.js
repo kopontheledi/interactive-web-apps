@@ -11,9 +11,9 @@ const divider = '----------------------------------'
 
 // Only change below this line
 
-const owed = parseFloat(leoBalance) + parseFloat(sarahBalance)
+const owed = (-1 * parseFloat(leoBalance)) + (-1 * parseFloat(sarahBalance) )
 const leo = `${leoName} ${leoSurname} Owed: R ${(-1 * parseFloat(leoBalance)).toFixed(2)}`
-const sarah = `${sarahName} ${sarahSurname} Owed: R ${(-1 * parseFloat(sarahBalance)).toFixed(2)}`
+const sarah = `${sarahName} ${sarahSurname}) Owed: R ${(-1 * parseFloat(sarahBalance)).toFixed(2)}`
 const total = `  Total amount owed: R ${owed.toFixed(2)}`
 const result = `\n${leo}\n${sarah}\n\n${divider}\n${total}\n${divider}`
 
