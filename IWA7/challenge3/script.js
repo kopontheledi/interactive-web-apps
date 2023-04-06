@@ -21,6 +21,6 @@ console.log(result)
 
 
 /*We can use the .toFixed(2) method to format the numbers with 2 decimal places. This method returns a string representation 
-of the number with the specified number of decimal places.
-Note that we need to multiply the balance values by -1 to make them positive, since the .toFixed() method doesn't work with negative numbers.
+of the number with the specified number of decimal places.*/
+/*Note that we need to multiply the balance values by -1 to make them positive, since the .toFixed() method doesn't work with negative numbers.
 the \n newline character to format the output.*/
