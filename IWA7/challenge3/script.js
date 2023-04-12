@@ -12,12 +12,14 @@ const divider = '----------------------------------'
 // Only change below this line
 
 const owed = (-1 * parseFloat(leoBalance)) + (-1 * parseFloat(sarahBalance) )
-const leo = `${leoName} ${leoSurname} Owed: R ${(-1 * parseFloat(leoBalance)).toFixed(2)}`
-const sarah = `${sarahName} ${sarahSurname}) Owed: R ${(-1 * parseFloat(sarahBalance)).toFixed(2)}`
+const leo = `${leoName} ${leoSurname} Owed: R ${(parseFloat(leoBalance)).toFixed(2)}`
+const sarah = `${sarahName} ${sarahSurname}) Owed: R ${(parseFloat(sarahBalance)).toFixed(2)}`
 const total = `  Total amount owed: R ${owed.toFixed(2)}`
 const result = `\n${leo}\n${sarah}\n\n${divider}\n${total}\n${divider}`
 
 console.log(result)
+
+/** */
 
 
 /*We can use the .toFixed(2) method to format the numbers with 2 decimal places. This method returns a string representation 
