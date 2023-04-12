@@ -53,6 +53,7 @@ const futureId = 9
 
 // Do not change code above this comment
 
+
 // Check if futureId exists in holidays object and log the name of the holiday if it does
 console.log(holidays[futureId] ? holidays[futureId].name : `ID ${futureId} not created yet`)
 
@@ -88,8 +89,6 @@ const randomIndex = Math.floor(Math.random() * holidayDates.length)
 const randomHoliday = holiday__Dates[randomIndex]
 const randomHolidayFormatted = randomHoliday.toLocaleDateString('en-GB')
 console.log('Random holiday:', randomHolidayFormatted)
-
-
 
 // const holidayDates = Object.values(holidays).map(holiday => holiday.date)
 // const firstHoliday = new Date(Math.min(...holidayDates))
