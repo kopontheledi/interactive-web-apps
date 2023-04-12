@@ -73,15 +73,6 @@ console.log('Date change:', copied.date.toLocaleDateString('en-GB'))
 
 // Log the first and last holiday dates of the year and a random holiday date
 
-
-// const holidayDates = Object.values(holidays).map(holiday => holiday.date)
-// const firstHoliday = new Date(Math.min(...holidayDates))
-// const lastHoliday = new Date(Math.max(...holidayDates))
-// const randomHoliday = holidayDates[Math.floor(Math.random() * holidayDates.length)]
-// console.log('First holiday:', firstHoliday.toLocaleDateString('en-GB'))
-// console.log('Last holiday:', lastHoliday.toLocaleDateString('en-GB'))
-// console.log('Random holiday:', randomHoliday.toLocaleDateString('en-GB'))
-
 const holidayDates = Object.values(holidays).map(holiday => holiday.date)
 const firstHoliday = new Date(Math.min(...holidayDates))
 const firstHolidayFormatted = firstHoliday.toLocaleDateString('en-GB')
@@ -97,3 +88,13 @@ const randomIndex = Math.floor(Math.random() * holidayDates.length)
 const randomHoliday = holiday__Dates[randomIndex]
 const randomHolidayFormatted = randomHoliday.toLocaleDateString('en-GB')
 console.log('Random holiday:', randomHolidayFormatted)
+
+
+
+// const holidayDates = Object.values(holidays).map(holiday => holiday.date)
+// const firstHoliday = new Date(Math.min(...holidayDates))
+// const lastHoliday = new Date(Math.max(...holidayDates))
+// const randomHoliday = holidayDates[Math.floor(Math.random() * holidayDates.length)]
+// console.log('First holiday:', firstHoliday.toLocaleDateString('en-GB'))
+// console.log('Last holiday:', lastHoliday.toLocaleDateString('en-GB'))
+// console.log('Random holiday:', randomHoliday.toLocaleDateString('en-GB'))
