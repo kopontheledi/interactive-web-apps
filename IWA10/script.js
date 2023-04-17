@@ -48,10 +48,12 @@ const holidays = {
 }
 const christmas = 6
 const futureId = 9
+
 // Do not change code above this comment
+
 console.log(holidays[futureId.name] || `ID ${futureId} not created yet`)
 copied = holidays[christmas]
-copied = { id: (holidays[christmas]).id , name: 'X-mas Day', date: new Date(`25 December ${currentYear}`)}
+copied = { id: (holidays[christmas]).id , name: 'X-mas Day', date: new Date(`25 December ${currentYear}`)} //set time to midnight
 correctDate = copied.date
 isEarlier = copied.date < holidays[6].date
 console.log('New date is earlier:', isEarlier)
@@ -64,33 +66,38 @@ console.log('Date change:', dateformat)
 correctdate0 = {date: new Date(`16 December ${currentYear}`)}
 const firstHolidayTimestamp = [
     correctdate0.date.getDate(),
-    holidays[1].date.getDate(),
+    holidays [1,2,3,4,5,6,7,8].date.getDate() //array list which can be manipulated externally
+   /*  holidays[1].date.getDate(),
     holidays[2].date.getDate(),
     holidays[3].date.getDate(),
     holidays[4].date.getDate(),
     holidays[5].date.getDate(),
     holidays[6].date.getDate(),
     holidays[7].date.getDate(),
-    holidays[8].date.getDate(),
+    holidays[8].date.getDate(), */
 ]
 const lastHolidayTimestamp = [
    correctdate0.date.getMonth(),
-    holidays[1].date.getMonth(),
+   holidays [1,2,3,4,5,6,7,8].date.getMonth()
+  /*   holidays[1].date.getMonth(),
     holidays[2].date.getMonth(),
     holidays[3].date.getMonth(),
     holidays[4].date.getMonth(),
     holidays[5].date.getMonth(),
     holidays[6].date.getMonth(),
     holidays[7].date.getMonth(),
-    holidays[8].date.getMonth(),
+    holidays[8].date.getMonth(), */
 ]
 const firstDay = Math.min(...firstHolidayTimestamp)
-const firstMonth = Math.min(...lastHolidayTimestamp)+1
+const firstMonth = Math.min(...lastHolidayTimestamp)+1 //add +1 because its function is 1short
 const lastDay = Math.max(...firstHolidayTimestamp)
 const lastMonth = Math.max(...lastHolidayTimestamp)+1
-console.log(`${firstDay.toString.length === 1 ? ('0'+firstDay): (firstDay)}/${firstMonth.toString.length === 1 ? ('0'+firstMonth): (firstMonth)}/${currentYear}`)
+
+console.log(`${firstDay.toString.length === 2 ? ('0'+firstDay): (firstDay)}/${firstMonth.toString.length === 1 ? ('0'+firstMonth): (firstMonth)}/${currentYear}`)
+//month and day have their own conditions therefore can not be put in each others if statements
 console.log(`${lastDay.toString.length === 2 ? ('0'+lastDay): (lastDay)}/${lastMonth.toString.length === 2 ? ('0'+lastMonth): (lastMonth)}/${currentYear}`)
-const randomHoliday = Math.ceil(Math.random()*8)
+
+const randomHoliday = Math.floor(Math.random()*8)
 console.log((holidays[randomHoliday]).name)
 
 

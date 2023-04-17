@@ -35,7 +35,6 @@ const book1 = {
   checkin: document.querySelector("#book1 .checkin "),
 };
 
-console.log(book1.reserve);
 
 const book2 = {
   status: document.querySelector("#book2 .status"),
@@ -62,7 +61,7 @@ book1.status.style.color = STATUS_MAP.overdue.color;
 // } else {
 //   book1.reserve.disabled = true;
 // }
-book1.reserve = STATUS_MAP.overdue.canReserve ? book1.reserve.enabled = true : book1.reserve.disabled = true
+book1.reserve = STATUS_MAP.overdue.canReserve ? book1.reserve.enabled = true : book1.reserve.disabled = true;
 
 // if (STATUS_MAP.overdue.canCheckout == true) {
 //     book1.checkout.enabled = true 

@@ -35,5 +35,5 @@ const order3Status = order3.querySelector('.status dd');
 order3Biscuits.textContent = order3.dataset.biscuits;
 order3Donuts.textContent = order3.dataset.donuts;
 order3Pancakes.textContent = order3.dataset.pancakes;
-order3Status.textContent = order3.dataset.delivered === 'true' ? 'Delivered' : 'Pending';
+order3Status.textContent = order3.dataset.delivered === 'true' ? 'Delivered' : 'Pending'; //selects data atributes, fetches them
 
