@@ -83,9 +83,9 @@ const createHtml = (athlete) => {
 
   const list = document.createElement('dl');
 
-  const day =  date.getDate()
-  const month = MONTHS[date.getMonth()];
-  const year = date.getFullYear();
+  const day =  date.getDate().toString().padStart(2, '0');
+  const month = MONTHS[date.getMonth()].toString().padStart(2, '0');
+  const year = date.getFullYear().toString().padStart(2, '0');
   console.log(month)
 
   //adds up all the elements in the array to get the total minutes on the specific race day
@@ -103,8 +103,8 @@ const createHtml = (athlete) => {
   list.innerHTML = /* html */ `
       <dt>Athlete: ${firstName +' '+ surname}</dt>
       <dt>Total Races: ${races}</dt>
-      <dt>Event Date (Latest): ${day.toString().padStart(2, '0')+' '+ month +' '+ year}</dt>
-      <dt>Total Time (Latest): ${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}</dt>
+      <dt>Event Date (Latest): ${day +' '+ month +' '+ year}</dt>
+      <dt>Total Time (Latest): ${hours}:${minutes}</dt>
     `;
   fragment.appendChild(list);
 
